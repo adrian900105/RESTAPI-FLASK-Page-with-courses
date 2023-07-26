@@ -11,12 +11,18 @@
         </div>
     </div>
 
-    <div>
+    <div class="container px-5 py-5">
         <h2>All Courses</h2>
-        <div>
+        <div class="row px-5 py-5">
             {% for course in courses %}
-                <h3>{{course.name}}</h3>
-
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{course.name}}</h5>
+                            <!-- <a href="/course/{{course.name}}" class="btn btn-primary">Szczegóły</a> -->
+                        </div>
+                    </div>
+                </div>
             {% endfor %}
         </div>
     </div>
